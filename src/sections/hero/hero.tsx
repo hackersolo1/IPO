@@ -1,7 +1,6 @@
 // src/sections/hero/hero.tsx
 // import React from 'react';
 import './hero.css';
-import { useEffect, useRef } from "react";
 import ScrubbingDeck from '../../components/SrubbingDeck/ScrubbingDeck';
 
 const frameModules = import.meta.glob('../../assets/videos/frames_versao_4/*.webp', {
