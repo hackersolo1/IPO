@@ -5,7 +5,9 @@ export default function Routine() {
         <section className="routine-section" id="routine" aria-labelledby="routine-title">
             <div className="routine-container">
                 <h2 className="routine-title" id="routine-title">
-                    YOUR ROUTINE, OPTIMIZED.
+                    YOUR ROUTINE,
+                    <br />
+                    OPTIMIZED.
                 </h2>
 
                 <div className="routine-grid">
@@ -16,11 +18,11 @@ export default function Routine() {
                             PROTOCOL
                         </h3>
                         <ul>
-                            <li>Protein powder scoop</li>
-                            <li>Creatine scoop</li>
-                            <li>Shaker bottle</li>
-                            <li>Water &amp; mixing</li>
-                            <li>Cleaning &amp; prep time</li>
+                            <li><s>Protein powder scoop</s></li>
+                            <li><s>Creatine scoop</s></li>
+                            <li><s>Shaker bottle</s></li>
+                            <li><s>Water &amp; mixing</s></li>
+                            <li><s>Cleaning &amp; prep time</s></li>
                         </ul>
                     </article>
 
