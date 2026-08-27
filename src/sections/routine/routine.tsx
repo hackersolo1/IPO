@@ -5,9 +5,7 @@ export default function Routine() {
         <section className="routine-section" id="routine" aria-labelledby="routine-title">
             <div className="routine-container">
                 <h2 className="routine-title" id="routine-title">
-                    YOUR ROUTINE,
-                    <br />
-                    OPTIMIZED.
+                    YOUR ROUTINE, OPTIMIZED.
                 </h2>
 
                 <div className="routine-grid">
