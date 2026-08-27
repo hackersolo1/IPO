@@ -11,7 +11,7 @@
 }
 
 .mantra-container {
-    width: min(100%, 720px);
+    width: min(90%, 1200px);
     margin: 0 auto;
     padding: 2rem 1.75rem;
     box-sizing: border-box;
