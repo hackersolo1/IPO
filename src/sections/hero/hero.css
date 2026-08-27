@@ -131,7 +131,7 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
-        filter: blur(10px);
+        filter: blur(5px);
         opacity: 0.52;
         mix-blend-mode: screen;
         transform: scale(1.12) rotate(-5deg);

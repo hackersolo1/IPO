@@ -5,14 +5,14 @@ export default function Hero() {
     return (
         <section className="hero-section" id="hero">
             <div className="hero-video-mobile" aria-hidden="true">
-                <video autoPlay loop muted playsInline preload="metadata">
+                <video autoPlay muted playsInline preload="metadata">
                     <source src={barVideo} type="video/mp4" />
                 </video>
             </div>
 
             <div className="hero-content">
                 <div className="hero-video-column" aria-hidden="true">
-                    <video className="hero-video-desktop" autoPlay loop muted playsInline preload="metadata">
+                    <video className="hero-video-desktop" autoPlay muted playsInline preload="metadata">
                         <source src={barVideo} type="video/mp4" />
                     </video>
                 </div>
