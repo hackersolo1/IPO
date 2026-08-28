@@ -3,7 +3,6 @@
 import './hero.css';
 import HeroBackgroundImage from '../../assets/images/fundo_secao_hero.png';
 // import HeroBackgroundVideo from '../../assets/videos/video_fundo_hero.mp4';
-import HeroBackgroundImage2 from '../../assets/images/fundo_secao_hero2.png';
 import { Zap, Droplet, Sprout } from 'lucide-react';
 
 export default function Hero() {
