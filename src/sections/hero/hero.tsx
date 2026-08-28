@@ -1,6 +1,5 @@
 import './hero.css';
-// import barVideo from '../../assets/videos/barra-girando.mp4';
-import fundoSecaoHero from '../../assets/images/fundo_secao_hero.jpg'
+import fundoSecaoHero from '../../assets/images/fundo_secao_hero.jpg';
 
 export default function Hero() {
     return (
