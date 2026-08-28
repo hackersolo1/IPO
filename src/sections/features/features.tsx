@@ -6,12 +6,12 @@ export default function Features() {
     return (
         <section className="features-section" id="features">
             <div className="features-container">
-                {/* Título */}
+                {/* Title */}
                 <h2 className="features-title">BUILT FOR PEAK OUTPUT</h2>
 
-                {/* Grid de benefícios */}
+                {/* Benefits grid */}
                 <div className="features-grid">
-                    {/* Card 1 - Proteína */}
+                    {/* Card 1 - Protein */}
                     <div className="feature-card">
                         <span className="feature-number">20G</span>
                         <span className="feature-label">PROTEIN</span>
@@ -24,7 +24,7 @@ export default function Features() {
                         </p>
                     </div>
 
-                    {/* Card 2 - Creatina */}
+                    {/* Card 2 - Creatine */}
                     <div className="feature-card">
                         <span className="feature-number">5G</span>
                         <span className="feature-label">CREATINE<br />MONOHYDRATE</span>

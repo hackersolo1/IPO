@@ -4,19 +4,21 @@
     position: relative;
     z-index: 4;
     width: 100%;
-    padding: 5rem 1rem;
+    padding: 1rem 1rem;
     color: #f4f4f4;
     background: #1b1b1b;
     font-family: 'Manrope', sans-serif;
+    display: flex;
+    justify-content: center;
 }
 
 .routine-container {
-    width: min(90%, 1200px);
-    margin: 0 auto;
+    width: 100%;
     padding: 2rem 1.75rem;
     box-sizing: border-box;
     border-radius: 1.5rem;
     background: #050505;
+    height: 90%;
 }
 
 .routine-title {
@@ -42,7 +44,21 @@
 }
 
 .routine-panel-highlight {
-    border: 1px solid #85858b;
+    position: relative;
+}
+
+.routine-panel-highlight {
+    border: 3px solid #85858b;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 .routine-panel h3 {

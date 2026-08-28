@@ -1,7 +1,7 @@
 // src/components/SrubbingDeck/ScrubbingDeck.tsx
 import { useState, useEffect, useRef } from 'react';
 
-// Definindo as interfaces para as props
+// Define the interfaces for the props
 interface ScrubbingDeckProps {
   totalFrames?: number;
   framePattern?: string;

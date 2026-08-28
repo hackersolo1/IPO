@@ -4,19 +4,21 @@
     position: relative;
     z-index: 4;
     width: 100%;
-    padding: 5rem 1rem;
+    padding: 0rem 1rem;
     color: #f4f4f4;
     background: #1b1b1b;
     font-family: 'Manrope', sans-serif;
+    display: flex;
+    justify-content: center;
 }
 
 .mantra-container {
-    width: min(90%, 1200px);
-    margin: 0 auto;
+    width: 100%;
     padding: 2rem 1.75rem;
     box-sizing: border-box;
     border-radius: 1.5rem;
     background: #050505;
+    height: 100%;
 }
 
 .mantra-container h2 {
@@ -25,11 +27,12 @@
     font-weight: 700;
     line-height: 1.02;
     letter-spacing: -0.04em;
+    margin-bottom: 20px;
 }
 
 .mantra-container p {
     margin: 0.125rem 0 0.625rem;
-    background: linear-gradient(90deg, #ffffff 0%, #ffffff 15%, #bdbdc1 45%, #8e8e93 85%, #8e8e93 100%);
+    background: linear-gradient(90deg, #ffffff 0%, #8e8e93 10%);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;

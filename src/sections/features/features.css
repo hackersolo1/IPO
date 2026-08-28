@@ -20,7 +20,7 @@
     padding: 0 4rem;
 }
 
-/* Título */
+/* Title */
 .features-title {
     font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
     font-size: 0.8rem;
@@ -53,7 +53,7 @@
     border-right: none;
 }
 
-/* Número grande */
+/* Large number */
 .feature-number {
     font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
     font-size: 3.5rem;
@@ -76,7 +76,7 @@
     margin-bottom: 1.5rem;
 }
 
-/* Descrição */
+/* Description */
 .feature-description {
     font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
     font-size: 0.85rem;
@@ -86,7 +86,7 @@
     margin: 0;
 }
 
-/* Responsividade */
+/* Responsiveness */
 @media (max-width: 1024px) {
     .features-container {
         padding: 0 2rem;
