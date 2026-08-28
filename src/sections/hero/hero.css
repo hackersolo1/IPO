@@ -37,7 +37,7 @@
     justify-content: center;
 }
 
-.hero-video-desktop {
+.hero-image-desktop {
     display: block;
     width: min(100%, 36rem);
     max-height: 28rem;
