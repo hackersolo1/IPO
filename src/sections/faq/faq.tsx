@@ -83,7 +83,7 @@ export default function Faq() {
                 <div className="faq-contact">
                     <h3>HAVE MORE QUESTIONS?</h3>
                     <p>We're here to help.</p>
-                    <p className="contact-detail">Contact us at support@ipo.bar or DM us on Instagram @ipo.bar</p>
+                    <p className="contact-detail">Contact us at ipo@nutrition.cpm or DM us on Instagram @ipo.bar</p>
                 </div>
             </div>
 

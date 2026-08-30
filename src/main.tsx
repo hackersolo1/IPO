@@ -15,7 +15,7 @@ ReactDOM.createRoot(rootElement).render(
         <Hero />
         <Routine />
         <Mantra />
-        <Faq />
         <Product />
+        <Faq />
     </>
 );
