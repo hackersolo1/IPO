@@ -1,38 +1,52 @@
 import './routine.css';
+import { Zap, Timer, BarChart3 } from 'lucide-react';
 
 export default function Routine() {
     return (
-        <section className="routine-section" id="routine" aria-labelledby="routine-title">
+        <section className="routine-section" id="formula" aria-labelledby="routine-title">
             <div className="routine-container">
-                <h2 className="routine-title" id="routine-title">
-                    YOUR ROUTINE, OPTIMIZED.
-                </h2>
-
-                <div className="routine-grid">
-                    <article className="routine-panel routine-panel-muted">
-                        <h3>
-                            TRADITIONAL
-                            <br />
-                            PROTOCOL
-                        </h3>
-                        <ul>
-                            <li><s>Protein powder scoop</s></li>
-                            <li><s>Creatine scoop</s></li>
-                            <li><s>Shaker bottle</s></li>
-                            <li><s>Water &amp; mixing</s></li>
-                            <li><s>Cleaning &amp; prep time</s></li>
-                        </ul>
-                    </article>
-
-                    <article className="routine-panel routine-panel-highlight">
-                        <h3>THE IPO SYSTEM</h3>
-                        <p className="routine-kicker">GRAB. CONSUME. PERFORM.</p>
-                        <ul>
-                            <li>1x IPO Creatine Bar</li>
-                            <li>0 powders, 0 shakers, 0 friction</li>
-                            <li>Instant performance protocol</li>
-                        </ul>
-                    </article>
+                <div className="title--container">
+                    <h2>OUR FORMULA</h2>
+                    <h1>
+                        CREATINE.
+                        <br />
+                        BUILT FOR MORE.
+                    </h1>
+                    <p>Creatine is one of the most researched and effective supplements to suport strength, <span>performance</span> and <span>recovery</span>.</p>
+                </div>
+                <div className="features--container--routine">
+                    <div className="feature--routine">
+                        <div className="icon">
+                            <Zap size={50} strokeWidth={1} color="#c88a58"/>
+                        </div>
+                        <div className="texts">
+                            <h3>MORE STRENGTH</h3>
+                            <p>Helps you push harder and lift more</p>
+                        </div>
+                    </div>
+                    <div className="feature--routine">
+                        <div className="icon">
+                            <Timer size={50} strokeWidth={1} color="#c88a58"/>
+                        </div>
+                        <div className="texts">
+                            <h3>FASTER RECOVERY</h3>
+                            <p>Supports your muscles so you're ready for more</p>
+                        </div>
+                    </div>
+                    <div className="feature--routine">
+                        <div className="icon">
+                            <BarChart3 size={50} strokeWidth={1} color="#c88a58"/>
+                        </div>
+                        <div className="texts">
+                            <h3>DAILY IMPACT</h3>
+                            <p>Small dose. Big results. Every single day</p>
+                        </div>
+                    </div>
+                </div>
+                <div className="footer--container--routine">
+                    <div className="footer--text--routine">
+                        <p>5G OF CREATINE IN EVERY BAR. PURE. EFFECTIVE. EVERYDAY</p>
+                    </div>
                 </div>
             </div>
         </section>

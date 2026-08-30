@@ -1,118 +1,110 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap');
 
+.barlow-condensed{
+    font-family: "Barlow Condensed", sans-serif;
+}
+
+.inter {
+    font-family: "Inter", sans-serif;
+}
+
 .routine-section {
     position: relative;
     z-index: 4;
     width: 100%;
+    height: max(110vh, 45rem);
     padding: 1rem 1rem;
     color: #f4f4f4;
-    background: #1b1b1b;
+    background: linear-gradient(to right, rgba(10, 10, 10, 0) 30%, rgba(10, 10, 10, 0.75) 50%, rgba(10, 10, 10, 1) 60%), url('../../assets/images/corredora_secao2.png');
+    background-size: cover;
+    background-position: center center;
     font-family: 'Manrope', sans-serif;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
 }
 
 .routine-container {
-    width: 100%;
-    padding: 2rem 1.75rem;
     box-sizing: border-box;
     border-radius: 1.5rem;
-    background: #050505;
-    height: 90%;
+    background: transparent;
+    height: 100%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    padding: 2.5rem 3rem 1.5rem 3rem;
 }
 
-.routine-title {
-    margin: 0;
-    font-size: clamp(1.75rem, 5vw, 3rem);
-    font-weight: 700;
-    line-height: 1.08;
-    letter-spacing: -0.035em;
+.title--container {
+    text-align: start;
 }
 
-.routine-grid {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 0.75rem;
-    margin-top: 1.5rem;
-}
-
-.routine-panel {
-    min-height: 13rem;
-    padding: 1.125rem;
-    border-radius: 0.875rem;
-    background: #111113;
-}
-
-.routine-panel-highlight {
-    position: relative;
-}
-
-.routine-panel-highlight {
-    border: 3px solid #85858b;
-}
-
-@keyframes rotate {
-    from {
-        transform: rotate(0deg);
-    }
-
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-.routine-panel h3 {
-    margin: 0 0 1.125rem;
-    font-size: clamp(1.125rem, 3vw, 1.7rem);
+.title--container h2 {
+    font-family: 'Inter';
+    font-size: 0.9rem;
     font-weight: 500;
-    line-height: 1.15;
+    text-transform: uppercase;
 }
 
-.routine-panel ul {
-    margin: 0;
-    padding-left: 1.125rem;
-    font-size: clamp(0.8125rem, 2vw, 1.0625rem);
-    line-height: 1.7;
+.title--container h1 {
+    font-size: 3.7rem;
+    font-family: 'Barlow Condensed';
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 3px;
+    margin-top: 10px;
 }
 
-.routine-panel li::marker {
-    font-size: 0.75em;
+.title--container p:not(.logo--p) {
+    margin-top: 10px;
+    opacity: 0.8;
+    max-width: 25rem;
 }
 
-.routine-panel-muted,
-.routine-panel-muted li {
-    color: #77777c;
+.title--container p:not(.logo--p) span {
+    color: #c88a58;
+    font-family: 'Inter';
 }
 
-.routine-panel-muted s {
-    text-decoration-thickness: 1px;
-    text-decoration-color: currentColor;
-    text-decoration-skip-ink: none;
+.features--container--routine {
+    border-top: 1.5px solid rgba(255, 255, 255, 0.3);
+    margin-top: 40px;
+    padding: 2rem 0rem 2rem 0rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
-.routine-panel-highlight li {
-    color: #efeff2;
+.feature--routine {
+    display: flex;
+    gap: 2.0rem;
 }
 
-.routine-kicker {
-    margin: 0 0 0.75rem;
-    color: #efeff2;
-    font-size: 0.75rem;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
+.feature--routine .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-@media (max-width: 560px) {
-    .routine-section {
-        padding: 3rem 0.625rem;
-    }
+.feature--routine .texts {
+    max-width: 12rem;
+}
 
-    .routine-container {
-        padding: 1.375rem 1.125rem;
-        border-radius: 1.125rem;
-    }
+.feature--routine .texts h3 {
+    font-weight: 500;
+}
 
-    .routine-grid {
-        grid-template-columns: 1fr;
-    }
+.feature--routine .texts p {
+    line-height: 1.7rem;
+    margin-top: 0.4rem;
+}
+
+.footer--container--routine {
+    margin-top: 0.7rem;
+}
+
+.footer--container--routine .footer--text--routine {
+    border: 1.5px solid #c88a58;
+    padding: 1.3rem;
+    color: #fff4ec;
+    font-size: 1.1rem;
 }

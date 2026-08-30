@@ -1,0 +1,235 @@
+/* faq.css */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap');
+
+.faq-section {
+    position: relative;
+    z-index: 4;
+    width: 100%;
+    padding: 4rem 4rem 0rem 4rem;
+    color: #f4f4f4;
+    background: #0a0a0a;
+    font-family: 'Manrope', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+.faq-header h2 {
+    font-family: 'Inter';
+    color: #ffbf8b;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.faq-header h1 {
+    max-width: 600px;
+    font-family: 'Barlow Condensed';
+    font-size: 3.5rem;
+    font-weight: 450;
+    margin-top: 0.7rem;
+    line-height: 1.1;
+}
+
+.faq-grid {
+    display: flex;
+    gap: 4rem;
+    margin-top: 2.5rem;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.faq-list {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.faq-item {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    cursor: pointer;
+    padding: 1.2rem 0;
+    transition: all 0.3s ease;
+}
+
+.faq-item:hover {
+    border-bottom-color: rgba(255, 191, 139, 0.3);
+}
+
+.faq-item.active {
+    border-bottom-color: rgba(255, 191, 139, 0.2);
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.faq-question span {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    color: #f4f4f4;
+}
+
+.faq-chevron {
+    color: #c88a58;
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
+}
+
+.faq-chevron.rotated {
+    transform: rotate(180deg);
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, padding 0.3s ease;
+    padding: 0;
+}
+
+.faq-answer.expanded {
+    max-height: 200px;
+    padding: 1rem 0 0.5rem 0;
+}
+
+.faq-answer p {
+    font-family: 'Inter';
+    font-weight: 200;
+    font-size: 0.95rem;
+    color: rgba(244, 244, 244, 0.7);
+    line-height: 1.6;
+}
+
+.faq-contact {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    padding: 2rem;
+    height: fit-content;
+    align-self: flex-start;
+    margin-top: 1rem;
+}
+
+.faq-contact h3 {
+    font-family: 'Barlow Condensed';
+    font-size: 1.8rem;
+    font-weight: 450;
+    color: #f4f4f4;
+    margin-bottom: 0.5rem;
+}
+
+.faq-contact p {
+    font-family: 'Inter';
+    font-weight: 200;
+    font-size: 1rem;
+    color: rgba(244, 244, 244, 0.6);
+    line-height: 1.6;
+}
+
+.faq-contact .contact-detail {
+    margin-top: 1.5rem;
+    color: rgba(244, 244, 244, 0.8);
+    font-size: 0.9rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    padding-top: 1.5rem;
+}
+
+.footer--container--faq {
+    margin-top: 4rem;
+    width: 100vw;
+    background: rgb(12, 12, 12);
+    height: 120px;
+    padding: 0rem 5rem 0rem 5rem;
+    transform: translateX(-5%);
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.footer-feature {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer-feature div h4 {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 0.85rem;
+    color: #f4f4f4;
+    letter-spacing: 1px;
+}
+
+.footer-feature div p {
+    font-family: 'Inter';
+    font-weight: 200;
+    font-size: 0.7rem;
+    color: rgba(244, 244, 244, 0.4);
+    letter-spacing: 1px;
+    margin-top: 2px;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .faq-grid {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .faq-contact {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .faq-section {
+        padding: 2rem 1.5rem 0rem 1.5rem;
+    }
+
+    .faq-header h1 {
+        font-size: 2.5rem;
+        max-width: 100%;
+    }
+
+    .footer--container--faq {
+        padding: 0rem 1.5rem;
+        height: auto;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        padding: 1.5rem;
+        transform: translateX(0);
+        width: 100%;
+        justify-content: center;
+    }
+
+    .footer-feature {
+        flex: 0 0 calc(50% - 1rem);
+    }
+}
+
+@media (max-width: 480px) {
+    .faq-header h1 {
+        font-size: 2rem;
+    }
+
+    .faq-question span {
+        font-size: 0.85rem;
+    }
+
+    .footer-feature {
+        flex: 0 0 100%;
+        justify-content: center;
+    }
+}
