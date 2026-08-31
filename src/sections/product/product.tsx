@@ -26,7 +26,7 @@ export default function Product() {
     const totalPrice = (packPrices[selectedPack] * quantity).toFixed(2);
 
     return (
-        <section className="product-section" aria-label="IPO Creatine Bar product">
+        <section className="product-section" aria-label="IPO Creatine Bar product" id='product'>
             
             <div className="product-container">
                 <div className="product-image">
