@@ -20,6 +20,9 @@
     background-size: 70%;
 }
 
+.hero--overlay__mobile {
+    display: none;
+}
 
 .hero-content {
     position: relative;
@@ -34,7 +37,8 @@
 }
 
 /* Right column - Text */
-.content-right, .content-left {
+.content-right,
+.content-left {
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -69,7 +73,8 @@
     padding: 20px 0px 20px 0px;
 }
 
-.content-right ul li:nth-child(1), .content-right ul li:nth-child(2) {
+.content-right ul li:nth-child(1),
+.content-right ul li:nth-child(2) {
     border-bottom: 1.5px solid rgb(93, 93, 93);
 }
 
@@ -159,6 +164,25 @@
 
 /* Mobile responsiveness */
 @media (max-width: 768px) {
+    .hero-section {
+        background: url('../../assets/images/fundo_secao_hero_mobile.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .hero--overlay__mobile {
+        position: absolute;
+        height: 100vh;
+        width: 100vw;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(5px);
+        z-index: 0;
+        display: block;
+    }
+
     .hero-content {
         flex-direction: column;
         width: min(100% - 2rem, 32rem);
@@ -170,7 +194,15 @@
     .content-right {
         align-items: center;
         width: 100%;
-        max-width: 24rem;
+        justify-content: center;
+    }
+
+    .content-right ul {
+        align-items: center;
+    }
+
+    .content-right ul li {
+        justify-content: center;
     }
 
     .hero-title {
@@ -221,7 +253,7 @@
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    
+
 }
 
 .footer--section .features--container {

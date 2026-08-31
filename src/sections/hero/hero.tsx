@@ -6,6 +6,7 @@ import { Zap, Droplet, Sprout } from 'lucide-react';
 export default function Hero() {
     return (
         <section className="hero-section" id="hero">
+            <div className="hero--overlay__mobile"></div>
             {/* Main content */}
             <div className="hero-content">
                 {/* Left column - Bar image */}
@@ -45,7 +46,7 @@ export default function Hero() {
                             </div>
                             <div className='feature--texts'>
                                 <h3>QUALITY</h3>
-                                <p>Carefully selected ingredients. Sugar free. Glutten-free.</p>
+                                <p>Carefully selected ingredients. Sugar free. Glutten free.</p>
                             </div>
                         </li>
                     </ul>
@@ -58,7 +59,7 @@ export default function Hero() {
                         <span>PROTEIN</span>
                     </div>
                     <div className="feature">
-                        <h3>50g</h3>
+                        <h3>5g</h3>
                         <span>CREATINE</span>
                     </div>
                     <div className="feature">

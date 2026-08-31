@@ -28,6 +28,10 @@
     overflow-x: hidden;
 }
 
+.mantra--overlay__mobile {
+    display: none;
+}
+
 .title--container--mantra h2 {
     font-family: 'Inter';
     color: #ffbf8b;
@@ -98,4 +102,128 @@
 .left--mantra p {
     max-width: 14rem;
     font-size: 1.05rem;
+}
+
+@media (max-width: 1024px) {
+    .mantra-section {
+        height: auto;
+        min-height: 100vh;
+        padding: 7rem 1.5rem 0;
+    }
+
+    .title--container--mantra h1 {
+        font-size: clamp(2.6rem, 7vw, 4rem);
+        max-width: 100%;
+    }
+
+    .features--container--mantra {
+        flex-wrap: wrap;
+        max-width: 100%;
+    }
+
+    .feature--mantra {
+        flex: 1 1 14rem;
+        padding-right: 1rem;
+        border-left: none;
+    }
+
+    .footer--container--mantra {
+        width: calc(100% + 3rem);
+        transform: translateX(-1.5rem);
+        padding: 1.5rem;
+        height: auto;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 768px) {
+    .mantra-section {
+        padding: 6.5rem 1.25rem 0;
+        background-position: center;
+        background: url('../../assets/images/montanha_secao3_mobile.png');
+        background-size: cover;
+        overflow-y: hidden;
+    }
+
+    .mantra--overlay__mobile {
+        position: absolute;
+        height: 120vh;
+        width: 100vw;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.75);
+        backdrop-filter: blur(10px);
+        z-index: -1;
+        display: block;
+    }
+
+    .features--container--mantra {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.25rem;
+
+    }
+
+    .feature--mantra:not(:last-of-type) {
+        width: 100%;
+        padding: 0;
+        border-right: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+        border-left: none;
+        padding-bottom: 1rem;
+    }
+
+    .feature--mantra:last-of-type {
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+
+    .feature--mantra p {
+        margin-top: 0.5rem;
+    }
+
+    .footer--container--mantra {
+        width: calc(100% + 2.5rem);
+        transform: translateX(-1.25rem);
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .right--mantra {
+        width: 100%;
+        padding: 0 0 1rem;
+        border-right: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .left--mantra p {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .title--container--mantra h2 {
+        font-size: 0.8rem;
+    }
+
+    .title--container--mantra h1 {
+        font-size: clamp(2rem, 10vw, 2.6rem);
+    }
+
+    .feature--mantra h3 {
+        font-size: 0.95rem;
+    }
+
+    .feature--mantra p {
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+
+    .right--mantra {
+        font-size: 1.7rem;
+    }
+
+    .left--mantra p {
+        font-size: 0.95rem;
+    }
 }

@@ -4,6 +4,7 @@ import { Zap, Timer, BarChart3 } from 'lucide-react';
 export default function Routine() {
     return (
         <section className="routine-section" id="formula" aria-labelledby="routine-title">
+            <div className="routine--overlay__mobile"></div>
             <div className="routine-container">
                 <div className="title--container">
                     <h2>OUR FORMULA</h2>

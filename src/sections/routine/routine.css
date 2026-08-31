@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap');
 
-.barlow-condensed{
+.barlow-condensed {
     font-family: "Barlow Condensed", sans-serif;
 }
 
@@ -21,6 +21,10 @@
     font-family: 'Manrope', sans-serif;
     display: flex;
     justify-content: flex-end;
+}
+
+.routine--overlay__mobile {
+    display: none;
 }
 
 .routine-container {
@@ -107,4 +111,111 @@
     padding: 1.3rem;
     color: #fff4ec;
     font-size: 1.1rem;
+}
+
+@media (max-width: 1024px) {
+    .routine-section {
+        justify-content: center;
+        height: auto;
+        min-height: 100vh;
+    }
+
+    .routine-container {
+        width: min(100%, 42rem);
+        padding: 2rem 1.5rem 1.25rem;
+        margin-top: -4rem;
+    }
+
+    .title--container h1 {
+        font-size: clamp(2.8rem, 7vw, 4.2rem);
+    }
+}
+
+@media (max-width: 768px) {
+    .routine-section {
+        background: ('../../assets/images/corredora_secao2_mobile.png');
+        background-size: cover;
+        background-position: center center;
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+    }
+
+    .routine--overlay__mobile {
+        position: absolute;
+        height: 120vh;
+        width: 100vw;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.75);
+        backdrop-filter: blur(10px);
+        z-index: -1;
+        display: block;
+    }
+
+    .routine-container {
+        width: 100%;
+        padding: 1.5rem 1rem;
+        height: 100%;
+    }
+
+    .title--container p:not(.logo--p) {
+        max-width: 100%;
+    }
+
+    .feature--routine {
+        gap: 1rem;
+        align-items: flex-start;
+    }
+
+    .feature--routine .texts {
+        max-width: none;
+    }
+
+    .feature--routine .texts p {
+        line-height: 1.5rem;
+    }
+
+    .footer--container--routine .footer--text--routine {
+        font-size: 0.95rem;
+        padding: 1rem 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .routine-section {
+        padding-top: 6.5rem;
+    }
+
+    .title--container h2 {
+        font-size: 0.75rem;
+    }
+
+    .title--container h1 {
+        font-size: clamp(2.2rem, 12vw, 3rem);
+        letter-spacing: 2px;
+        line-height: 1.05;
+    }
+
+    .features--container--routine {
+        margin-top: 1.5rem;
+        padding-top: 1.5rem;
+    }
+
+    .feature--routine {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .feature--routine .icon {
+        justify-content: flex-start;
+    }
+
+    .feature--routine .texts h3 {
+        font-size: 1rem;
+    }
+
+    .feature--routine .texts p {
+        margin-top: 0.25rem;
+        line-height: 1.4rem;
+    }
 }

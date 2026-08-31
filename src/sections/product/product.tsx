@@ -27,6 +27,7 @@ export default function Product() {
 
     return (
         <section className="product-section" id="product" aria-label="IPO Creatine Bar product">
+            
             <div className="product-container">
                 <div className="product-image">
                     <div className="product-badge">IPO</div>
@@ -129,8 +130,8 @@ export default function Product() {
 
                     <div className="product-footer">
                         <p>We ship to Belgium, Netherlands, France, Germany and more.</p>
-                        <a href="mailto:hello@ipo-nutrition.com" className="contact-link">
-                            Questions? Contact us at hello@ipo-nutrition.com
+                        <a href="mailto:info@iponutrition.com" className="contact-link">
+                            Questions? Contact us at info@iponutrition.com
                             <ChevronRight size={16} strokeWidth={1.5} />
                         </a>
                     </div>
