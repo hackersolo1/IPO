@@ -7,7 +7,7 @@ export default function Header() {
     const [activeLink, setActiveLink] = useState('BARS');
 
     const navItems = [
-        { id: 'BARS', label: 'BARS', sectionId: 'product' },
+        { id: 'BARS', label: 'BARS', sectionId: 'hero' },
         { id: 'FORMULA', label: 'OUR FORMULA', sectionId: 'formula' },
         { id: 'ABOUT', label: 'ABOUT', sectionId: 'about' },
         { id: 'FAQ', label: 'FAQ', sectionId: 'faq' }
@@ -29,7 +29,6 @@ export default function Header() {
         }
     };
 
-    // Optional: Update active link on scroll
     useEffect(() => {
         const handleScroll = () => {
             const sections = navItems.map(item => ({
