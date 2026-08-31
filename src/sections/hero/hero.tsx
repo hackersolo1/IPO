@@ -5,7 +5,7 @@ import { Zap, Droplet, Sprout } from 'lucide-react';
 
 export default function Hero() {
     return (
-        <section className="hero-section" id="hero">
+        <section className="hero-section" id="product">
             <div className="hero--overlay__mobile"></div>
             {/* Main content */}
             <div className="hero-content">
