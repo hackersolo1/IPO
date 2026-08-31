@@ -147,10 +147,9 @@
 
     .mantra--overlay__mobile {
         position: absolute;
-        height: 120vh;
-        width: 100vw;
-        top: 0;
-        left: 0;
+        inset: 0;
+        width: auto;
+        height: auto;
         background: rgba(0, 0, 0, 0.75);
         backdrop-filter: blur(10px);
         z-index: -1;
