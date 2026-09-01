@@ -54,7 +54,7 @@ export default function Faq() {
         <section className="faq-section" id="faq" aria-label="Frequently asked questions">
             <div className="faq-header">
                 <h2>FAQ</h2>
-                <h1>EVERYTHING YOU NEED TO KNOW ABOUT IPO.</h1>
+                <h2 className="faq-title">EVERYTHING YOU NEED TO KNOW ABOUT IPO.</h2>
             </div>
 
             <div className="faq-grid">

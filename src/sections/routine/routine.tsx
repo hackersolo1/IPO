@@ -8,12 +8,12 @@ export default function Routine() {
             <div className="routine-container">
                 <div className="title--container">
                     <h2>OUR FORMULA</h2>
-                    <h1>
+                    <h2 className="routine-title">
                         CREATINE.
                         <br />
                         BUILT FOR MORE.
-                    </h1>
-                    <p>Creatine is one of the most researched and effective supplements to suport strength, <span>performance</span> and <span>recovery</span>.</p>
+                    </h2>
+                    <p>Creatine is one of the most researched and effective supplements to support strength, <span>performance</span> and <span>recovery</span>.</p>
                 </div>
                 <div className="features--container--routine">
                     <div className="feature--routine">

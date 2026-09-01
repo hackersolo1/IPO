@@ -76,7 +76,7 @@
     letter-spacing: 2px;
 }
 
-.product-header h1 {
+.product-header .product-title {
     font-family: 'Barlow Condensed';
     font-size: 3rem;
     font-weight: 450;
@@ -381,7 +381,7 @@
         padding: 2rem 1.5rem;
     }
 
-    .product-header h1 {
+    .product-header .product-title {
         font-size: 2.2rem;
     }
 
@@ -425,7 +425,7 @@
         padding: 1.5rem 1rem;
     }
 
-    .product-header h1 {
+    .product-header .product-title {
         font-size: 1.8rem;
     }
 

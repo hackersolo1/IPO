@@ -38,7 +38,7 @@ export default function Product() {
                 <div className="product-info">
                     <div className="product-header">
                         <h2>IPO CREATINE BAR</h2>
-                        <h1>CHOCOLATE FLAVOUR</h1>
+                        <h2 className="product-title">CHOCOLATE FLAVOUR</h2>
                         <div className="product-rating">
                             <div className="stars">
                                 {[...Array(5)].map((_, i) => (

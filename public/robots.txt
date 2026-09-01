@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://iponutrition.com/sitemap.xml
+Sitemap: https://www.iponutrition.com/sitemap.xml

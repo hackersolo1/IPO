@@ -39,7 +39,7 @@
     font-weight: 400;
 }
 
-.title--container--mantra h1 {
+.title--container--mantra .mantra-title {
     max-width: 600px;
     font-family: 'Barlow Condensed';
     font-size: 3.5rem;
@@ -111,7 +111,7 @@
         padding: 7rem 1.5rem 0;
     }
 
-    .title--container--mantra h1 {
+    .title--container--mantra .mantra-title {
         font-size: clamp(2.6rem, 7vw, 4rem);
         max-width: 100%;
     }
@@ -205,7 +205,7 @@
         font-size: 0.8rem;
     }
 
-    .title--container--mantra h1 {
+    .title--container--mantra .mantra-title {
         font-size: clamp(2rem, 10vw, 2.6rem);
     }
 
