@@ -172,6 +172,49 @@
     margin-top: 2px;
 }
 
+/* Flavour Selector */
+.flavour-selector h3 {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 0.8rem;
+    letter-spacing: 1.5px;
+    color: rgba(244, 244, 244, 0.5);
+    margin-bottom: 0.8rem;
+}
+
+.flavour-options {
+    display: flex;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+}
+
+.flavour-option {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 999px;
+    padding: 0.8rem 1.2rem;
+    color: #f4f4f4;
+    cursor: pointer;
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 0.9rem;
+    letter-spacing: 0.2px;
+    transition: all 0.3s ease;
+    min-width: 150px;
+}
+
+.flavour-option:hover {
+    border-color: rgba(200, 136, 88, 0.3);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.flavour-option.active {
+    background: rgba(200, 136, 88, 0.12);
+    border-color: #c88a58;
+    color: #ffbf8b;
+    box-shadow: 0 0 0 1px rgba(200, 136, 88, 0.35);
+}
+
 /* Quantity Selector */
 .quantity-selector h3 {
     font-family: 'Inter';

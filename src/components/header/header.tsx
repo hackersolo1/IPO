@@ -63,7 +63,7 @@ export default function Header() {
                     <p className='logo--p'>
                         <span>IMPROVE.</span>
                         <span>PERFORM.</span>
-                        <span>OVERCOME</span>
+                        <span>OVERCOME.</span>
                     </p>
                 </div>
                 <div className="nav--container">

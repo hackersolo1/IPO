@@ -6,6 +6,7 @@ import { useState } from 'react';
 export default function Product() {
     const [quantity, setQuantity] = useState(1);
     const [selectedPack, setSelectedPack] = useState<'1' | '6' | '12'>('1');
+    const [selectedFlavor, setSelectedFlavor] = useState<'chocolate' | 'white chocolate'>('chocolate');
 
     const packPrices = {
         '1': 4.00,
@@ -19,6 +20,7 @@ export default function Product() {
         '12': 17
     };
 
+
     const handleQuantityChange = (delta: number) => {
         setQuantity(prev => Math.max(1, prev + delta));
     };
@@ -27,7 +29,7 @@ export default function Product() {
 
     return (
         <section className="product-section" aria-label="IPO Creatine Bar product" id='product'>
-            
+
             <div className="product-container">
                 <div className="product-image">
                     <div className="product-badge">IPO</div>
@@ -76,6 +78,24 @@ export default function Product() {
                                 <span className="pack-name">12 BARS</span>
                                 <span className="pack-price">€{packPrices['12'].toFixed(2)}</span>
                                 <span className="pack-save">Save {packSavings['12']}%</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div className='flavour-selector'>
+                        <h3>CHOOSE YOUR FLAVOUR</h3>
+                        <div className="flavour-options">
+                            <button
+                                className={`flavour-option ${selectedFlavor === 'chocolate' ? 'active' : ''}`}
+                                onClick={() => setSelectedFlavor('chocolate')}
+                            >
+                                Chocolate
+                            </button>
+                            <button
+                                className={`flavour-option ${selectedFlavor === 'white chocolate' ? 'active' : ''}`}
+                                onClick={() => setSelectedFlavor('white chocolate')}
+                            >
+                                White Chocolate
                             </button>
                         </div>
                     </div>
