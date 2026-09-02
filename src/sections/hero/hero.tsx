@@ -13,7 +13,7 @@ export default function Hero() {
                 <div className='content-left'>
                     <span className="hero-badge-top">NEW</span>
                     <h1 className="hero-title">
-                        PERFORMANCE<br />
+                        PERFOMANCE<br />
                         IN EVERY CHOICE
                     </h1>
                     <span className="hero-badge-bottom">The protein bar with creatine developed to elevate your training and your routine.</span>
@@ -46,7 +46,7 @@ export default function Hero() {
                             </div>
                             <div className='feature--texts'>
                                 <h3>QUALITY</h3>
-                                <p>Carefully selected ingredients. Sugar-free. Gluten-free.</p>
+                                <p>Carefully selected ingredients. Sugar free. Glutte free.</p>
                             </div>
                         </li>
                     </ul>

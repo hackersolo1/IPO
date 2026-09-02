@@ -25,7 +25,7 @@
     letter-spacing: 2px;
 }
 
-.faq-header .faq-title {
+.faq-header h1 {
     max-width: 600px;
     font-family: 'Barlow Condensed';
     font-size: 3.5rem;
@@ -198,7 +198,7 @@
         padding: 2rem 1.5rem 0rem 1.5rem;
     }
 
-    .faq-header .faq-title {
+    .faq-header h1 {
         font-size: 2.5rem;
         max-width: 100%;
     }
@@ -220,7 +220,7 @@
 }
 
 @media (max-width: 480px) {
-    .faq-header .faq-title {
+    .faq-header h1 {
         font-size: 2rem;
     }
 

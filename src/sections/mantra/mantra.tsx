@@ -7,7 +7,7 @@ export default function Mantra() {
             <div className="mantra--overlay__mobile"></div>
             <div className="title--container--mantra">
                 <h2>OUR MISSION</h2>
-                <h2 className="mantra-title">TO HELP YOU IMPROVE, PERFORM AND OVERCOME EVERY DAY.</h2>
+                <h1>TO HELP YOU IMPROVE, PERFORM AND OVERCOME EVERY DAY.</h1>
             </div>
             <div className="features--container--mantra">
                 <div className="feature--mantra">
