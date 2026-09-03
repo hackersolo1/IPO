@@ -224,7 +224,10 @@
         display: block;
         flex: 0 0 clamp(18rem, 78vw, 30rem);
         width: 100%;
+        position: relative;
+        z-index: 1;
         background: url('../../assets/images/fundo_secao_hero_mobile.png') center center / cover no-repeat;
+        box-shadow: 0 1.5rem 2.5rem rgba(1, 1, 1, 0.95);
     }
 
     .hero--overlay__mobile {

@@ -147,7 +147,10 @@
         display: block;
         flex: 0 0 clamp(18rem, 82vw, 32rem);
         width: 100%;
+        position: relative;
+        z-index: 1;
         background: url('../../assets/images/corredora_secao2_mobile.png') center center / cover no-repeat;
+        box-shadow: 0 1.5rem 2.5rem rgba(10, 10, 10, 0.95);
     }
 
     .routine--overlay__mobile {
