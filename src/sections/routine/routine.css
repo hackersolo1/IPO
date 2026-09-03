@@ -149,7 +149,7 @@
         width: 100%;
         position: relative;
         z-index: 1;
-        background: url('../../assets/images/corredora_secao2_mobile.png') center center / cover no-repeat;
+        background: linear-gradient(to bottom, rgba(10, 10, 10, 0) 30%, rgba(10, 10, 10, 0.75) 50%, rgba(10, 10, 10, 1) 60%), url('../../assets/images/corredora_secao2_mobile.png') center center / cover no-repeat;
         box-shadow: 0 1.5rem 2.5rem rgba(10, 10, 10, 0.95);
     }
 
