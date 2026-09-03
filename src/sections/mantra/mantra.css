@@ -152,7 +152,7 @@
         width: 100%;
         position: relative;
         z-index: 1;
-        background: url('../../assets/images/montanha_secao3_mobile.png') center center / cover no-repeat;
+        background: linear-gradient(to bottom, rgba(10, 10, 10, 0) 40%, rgba(10, 10, 10, 0.75) 60%, rgba(10, 10, 10, 1) 80%), url('../../assets/images/montanha_secao3_mobile.png') center center / cover no-repeat;
         box-shadow: 0 1.5rem 2.5rem rgba(12, 12, 12, 0.95);
     }
 
