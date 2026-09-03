@@ -7,6 +7,7 @@ export default function Hero() {
     return (
         <section className="hero-section" id="hero">
             <div className="hero--overlay__mobile"></div>
+            <div className="hero-mobile-image" aria-hidden="true"></div>
             {/* Main content */}
             <div className="hero-content">
                 {/* Left column - Bar image */}

@@ -23,7 +23,8 @@
     justify-content: flex-end;
 }
 
-.routine--overlay__mobile {
+.routine--overlay__mobile,
+.routine-mobile-image {
     display: none;
 }
 
@@ -133,29 +134,31 @@
 
 @media (max-width: 768px) {
     .routine-section {
-        background: ('../../assets/images/corredora_secao2_mobile.png');
-        background-size: cover;
-        background-position: center center;
-        -webkit-backdrop-filter: blur(10px);
-        backdrop-filter: blur(10px);
+        flex-direction: column;
+        justify-content: flex-start;
+        height: auto;
+        min-height: 0;
+        padding: 0;
+        background: #0a0a0a;
+        overflow: hidden;
+    }
+
+    .routine-mobile-image {
+        display: block;
+        flex: 0 0 clamp(18rem, 82vw, 32rem);
+        width: 100%;
+        background: url('../../assets/images/corredora_secao2_mobile.png') center center / cover no-repeat;
     }
 
     .routine--overlay__mobile {
-        position: absolute;
-        height: 120vh;
-        width: 100vw;
-        top: 0;
-        left: 0;
-        background: rgba(0, 0, 0, 0.75);
-        backdrop-filter: blur(10px);
-        z-index: -1;
-        display: block;
+        display: none;
     }
 
     .routine-container {
         width: 100%;
-        padding: 1.5rem 1rem;
-        height: 100%;
+        padding: 3rem 1rem 2rem;
+        height: auto;
+        margin-top: 0;
     }
 
     .title--container p:not(.logo--p) {
@@ -183,7 +186,7 @@
 
 @media (max-width: 480px) {
     .routine-section {
-        padding-top: 6.5rem;
+        padding-top: 0;
     }
 
     .title--container h2 {

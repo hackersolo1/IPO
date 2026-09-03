@@ -5,6 +5,7 @@ export default function Routine() {
     return (
         <section className="routine-section" id="formula" aria-labelledby="routine-title">
             <div className="routine--overlay__mobile"></div>
+            <div className="routine-mobile-image" aria-hidden="true"></div>
             <div className="routine-container">
                 <div className="title--container">
                     <h2>OUR FORMULA</h2>

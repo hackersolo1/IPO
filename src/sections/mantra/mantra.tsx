@@ -5,6 +5,7 @@ export default function Mantra() {
     return (
         <section className="mantra-section" id="about" aria-label="Brand statement">
             <div className="mantra--overlay__mobile"></div>
+            <div className="mantra-mobile-image" aria-hidden="true"></div>
             <div className="title--container--mantra">
                 <h2>OUR MISSION</h2>
                 <h1>TO HELP YOU IMPROVE, PERFORM AND OVERCOME EVERY DAY.</h1>
