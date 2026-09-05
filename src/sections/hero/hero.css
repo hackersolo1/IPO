@@ -147,7 +147,6 @@
     display: flex;
     justify-content: center;
     align-items: flex-end;
-
 }
 
 .footer--section .features--container {
@@ -179,6 +178,14 @@
     color: #c88a58;
     text-transform: uppercase;
     font-family: 'Inter';
+}
+
+.features--section__test {
+    display: none;
+}
+
+.footer--section__test .features--container {
+    display: none;
 }
 
 /* Tablet responsiveness */
@@ -290,10 +297,35 @@
         align-items: center;
         margin-top: 2.5rem;
         padding-bottom: 1.5rem;
+        overflow-x: scroll;
     }
 
     .footer--section .features--container {
         margin-bottom: 0;
+    }
+
+    /* Tests */
+    .footer--section__test {
+        overflow-x: scroll;
+        animation: carrousel 45s linear infinite;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 2rem;
+        width: max-content;
+    }
+
+    .footer--section__test::-webkit-scrollbar {
+        display: none;
+    }
+
+    .footer--section__test .features--container {
+        flex-direction: row;
+        gap: 2rem;
+        justify-content: flex-start;
+        align-items: flex-start;
+        overflow-x: scroll;
+        width: max-content;
+        display: flex;
     }
 }
 
@@ -309,5 +341,17 @@
     .content-right ul li .feature--image svg {
         width: 2.25rem;
         height: 2.25rem;
+    }
+}
+
+
+
+@keyframes carrousel {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
     }
 }

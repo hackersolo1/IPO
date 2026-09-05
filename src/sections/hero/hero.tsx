@@ -73,6 +73,74 @@ export default function Hero() {
                     </div>
                 </div>
             </div>
+            <div className="footer--section footer--section__test">
+                <div className="features--container">
+                    <div className="feature">
+                        <h3>20g</h3>
+                        <span>PROTEIN</span>
+                    </div>
+                    <div className="feature">
+                        <h3>5g</h3>
+                        <span>CREATINE</span>
+                    </div>
+                    <div className="feature">
+                        <h3>0g</h3>
+                        <span>SUGAR</span>
+                    </div>
+                    <div className="feature">
+                        <h3>220</h3>
+                        <span>CALORIES</span>
+                    </div>
+                    <div className="feature">
+                        <h3>20g</h3>
+                        <span>PROTEIN</span>
+                    </div>
+                    <div className="feature">
+                        <h3>5g</h3>
+                        <span>CREATINE</span>
+                    </div>
+                    <div className="feature">
+                        <h3>0g</h3>
+                        <span>SUGAR</span>
+                    </div>
+                    <div className="feature">
+                        <h3>220</h3>
+                        <span>CALORIES</span>
+                    </div>
+                    <div className="feature">
+                        <h3>20g</h3>
+                        <span>PROTEIN</span>
+                    </div>
+                    <div className="feature">
+                        <h3>5g</h3>
+                        <span>CREATINE</span>
+                    </div>
+                    <div className="feature">
+                        <h3>0g</h3>
+                        <span>SUGAR</span>
+                    </div>
+                    <div className="feature">
+                        <h3>220</h3>
+                        <span>CALORIES</span>
+                    </div>
+                    <div className="feature">
+                        <h3>20g</h3>
+                        <span>PROTEIN</span>
+                    </div>
+                    <div className="feature">
+                        <h3>5g</h3>
+                        <span>CREATINE</span>
+                    </div>
+                    <div className="feature">
+                        <h3>0g</h3>
+                        <span>SUGAR</span>
+                    </div>
+                    <div className="feature">
+                        <h3>220</h3>
+                        <span>CALORIES</span>
+                    </div>
+                </div>
+            </div>
         </section>
     );
 }
