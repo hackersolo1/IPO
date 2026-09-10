@@ -13,12 +13,12 @@ const rootElement = document.getElementById("root") as HTMLElement;
 
 ReactDOM.createRoot(rootElement).render(
     <>
-        <SpeedInsights />
         <Header />
         <Hero />
         <Routine />
         <Mantra />
         <Product />
         <Faq />
+        <SpeedInsights />
     </>
 );
