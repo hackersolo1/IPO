@@ -7,10 +7,13 @@ import Mantra from './sections/mantra/mantra';
 import Faq from "./sections/faq/faq.tsx";
 import Product from "./sections/product/product.tsx";
 
+import { SpeedInsights } from "@vercel/speed-insights/react"
+
 const rootElement = document.getElementById("root") as HTMLElement;
 
 ReactDOM.createRoot(rootElement).render(
     <>
+        <SpeedInsights />
         <Header />
         <Hero />
         <Routine />
