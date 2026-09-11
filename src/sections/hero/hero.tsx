@@ -53,7 +53,7 @@ export default function Hero() {
                     </ul>
                 </div>
             </div>
-            <div className="footer--section__desktop">
+            <div className="footer--section__desktop footer--section">
                 <div className="features--container">
                     <div className="feature">
                         <h3>20g</h3>
