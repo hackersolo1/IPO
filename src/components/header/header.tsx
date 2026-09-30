@@ -88,10 +88,30 @@ export default function Header() {
                     <button onClick={() => {
                         document.getElementById('product')?.scrollIntoView({
                             behavior: "smooth",
-                            block: "start",    
+                            block: "start",
                             inline: "nearest"
                         });
                     }}>SHOP NOW</button>
+                </div>
+            </div>
+            <div className="nav--container__mobile">
+                <div className="nav--container">
+                    <ul className='nav--list__flex'>
+                        {navItems.map((item) => (
+                            <li key={item.id}>
+                                <a
+                                    href={`#${item.sectionId}`}
+                                    className={`nav--link ${activeLink === item.id ? 'nav__active' : ''}`}
+                                    onClick={(e) => {
+                                        e.preventDefault();
+                                        handleNavClick(item.id, item.sectionId);
+                                    }}
+                                >
+                                    {item.label}
+                                </a>
+                            </li>
+                        ))}
+                    </ul>
                 </div>
             </div>
         </header>

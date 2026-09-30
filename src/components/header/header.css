@@ -1,4 +1,3 @@
-/* header.css - atualizado com melhorias */
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 
 * {
@@ -130,11 +129,18 @@ header img {
     }
 }
 
-/* Responsive */
+/* Esconde a navegação mobile no desktop */
+.nav--container__mobile {
+    display: none;
+}
+
+/* Responsive (Mobile) */
 @media (max-width: 768px) {
     header {
         padding-top: 0.5rem;
         padding-inline: 0.5rem;
+        flex-direction: column; 
+        gap: 10px; 
     }
 
     .header--container {
@@ -148,9 +154,10 @@ header img {
         width: 4.5rem;
     }
 
+    /* Esconde com segurança a navegação do container superior */
     .logo--p,
-    .nav--container {
-        display: none;
+    .header--container .nav--container {
+        display: none !important;
     }
 
     .button--container button {
@@ -159,11 +166,54 @@ header img {
         white-space: nowrap;
     }
 
-    header h1 {
-        font-size: 16px;
+    /* Estilos da pílula de navegação mobile */
+    .nav--container__mobile {
+        display: flex !important;
+        width: 100%;
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+        background: rgba(48, 48, 48, 0.85); 
+        border-radius: 25px; 
+        padding: 12px 15px;
+        border: 1px solid rgba(255, 255, 255, 0.08); 
+    }
+
+    /* Força o container interno da pílula a aparecer */
+    .nav--container__mobile .nav--container {
+        display: block !important;
+        width: 100%;
+    }
+
+    .nav--container__mobile .nav--list__flex {
+        display: flex !important;
+        justify-content: space-around;
+        width: 100%;
+        gap: 5px;
+    }
+
+    /* Força os links a aparecerem com a cor correta */
+    .nav--container__mobile .nav--list__flex a {
+        font-size: 0.75rem;
+        font-weight: 500;
+        color: #e0e0e0 !important; 
+        display: block;
+    }
+
+    .nav--container__mobile .nav--list__flex a:hover {
+        color: #ffffff !important;
+    }
+
+    .nav--container__mobile .nav--list__flex .nav__active {
+        color: #c88a58 !important; 
+    }
+
+    .nav--container__mobile .nav--list__flex .nav__active::after {
+        bottom: -4px; 
+        height: 2px;
     }
 }
 
+/* Tablets e afins */
 @media (max-width: 1024px) and (min-width: 769px) {
     .nav--container .nav--list__flex {
         gap: clamp(0.8rem, 2vw, 2rem);

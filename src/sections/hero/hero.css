@@ -216,6 +216,11 @@
         position: relative;
         margin-top: 20px;
     }
+
+    .footer--section__mobile .features--container .feature {
+        font-size: 0.5em;
+        padding: 5px 25px 5px 25px;
+    }
 }
 
 /* Mobile responsiveness */
@@ -235,6 +240,7 @@
         z-index: 1;
         background: url('../../assets/images/fundo_secao_hero_mobile.png') center center / cover no-repeat;
         box-shadow: 0 1.5rem 2.5rem rgba(1, 1, 1, 0.95);
+        margin-top: 2em;
     }
 
     .hero--overlay__mobile {
@@ -311,10 +317,9 @@
     /* Tests */
     .footer--section__mobile {
         overflow-x: scroll;
-        animation: carrousel 45s linear infinite;
         justify-content: flex-start;
         align-items: flex-start;
-        gap: 2rem;
+        /* gap: 2rem; */
         width: max-content;
     }
 
@@ -324,7 +329,7 @@
 
     .footer--section__mobile .features--container {
         flex-direction: row;
-        gap: 2rem;
+        /* gap: 2rem; */
         justify-content: flex-start;
         align-items: flex-start;
         overflow-x: scroll;
@@ -332,7 +337,9 @@
         display: flex;
     }
 
-    
+    .footer--section__mobile .features--container .features {
+        padding: 5px 13px 5px 13px;
+    }
 }
 
 @media (max-width: 420px) {
