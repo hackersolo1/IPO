@@ -2,11 +2,14 @@
 import './product.css';
 import { Minus, Plus, Star, Truck, Lock, ShieldCheck, ChevronRight } from 'lucide-react';
 import { useState } from 'react';
+import brancoVideo from '../../assets/videos/barra_branca.mp4';
+import pretoVideo from '../../assets/videos/barra_preta.mp4';
 
 export default function Product() {
     const [quantity, setQuantity] = useState(1);
     const [selectedPack, setSelectedPack] = useState<'1' | '6' | '12'>('1');
-    const [selectedFlavor, setSelectedFlavor] = useState<'chocolate' | 'white chocolate'>('chocolate');
+    const [selectedFlavor, setSelectedFlavor] = useState<string>('chocolate');
+    const [selectedVideo, setSelectedVideo] = useState(brancoVideo);
 
     const packPrices = {
         '1': 4.00,
@@ -27,12 +30,24 @@ export default function Product() {
 
     const totalPrice = (packPrices[selectedPack] * quantity).toFixed(2);
 
+    const setFlavor = (flavor: string) => {
+        setSelectedFlavor(flavor);
+        if (flavor == 'chocolate') {
+            setSelectedVideo(pretoVideo)
+        };
+
+        if (flavor == 'white chocolate') {
+            setSelectedVideo(brancoVideo);
+        };
+    };
+
     return (
         <section className="product-section" aria-label="IPO Creatine Bar product" id='product'>
 
             <div className="product-container">
                 <div className="product-image">
                     <div className="product-badge">IPO</div>
+                    <video src={selectedVideo} autoPlay muted className='product-bar-video'></video>
                 </div>
 
                 <div className="product-info">
@@ -87,13 +102,13 @@ export default function Product() {
                         <div className="flavour-options">
                             <button
                                 className={`flavour-option ${selectedFlavor === 'chocolate' ? 'active' : ''}`}
-                                onClick={() => setSelectedFlavor('chocolate')}
+                                onClick={() => setFlavor('chocolate')}
                             >
                                 Chocolate
                             </button>
                             <button
                                 className={`flavour-option ${selectedFlavor === 'white chocolate' ? 'active' : ''}`}
-                                onClick={() => setSelectedFlavor('white chocolate')}
+                                onClick={() => setFlavor('white chocolate')}
                             >
                                 White Chocolate
                             </button>

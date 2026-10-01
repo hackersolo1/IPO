@@ -35,10 +35,20 @@
     border-radius: 20px;
     border: 1px solid rgba(255, 255, 255, 0.05);
     position: relative;
-    background: url('../../assets/images/barras_secao_comprar.jfif');
+    /* background: url('../../assets/images/barras_secao_comprar.jfif'); */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+.product-bar-video {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
 }
 
 .product-badge {
