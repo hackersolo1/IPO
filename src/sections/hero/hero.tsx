@@ -47,7 +47,7 @@ export default function Hero() {
                             </div>
                             <div className='feature--texts'>
                                 <h3>QUALITY</h3>
-                                <p>Carefully selected ingredients. Sugar free. Glutte free.</p>
+                                <p>Carefully selected ingredients. Sugar free. Gluttem free.</p>
                             </div>
                         </li>
                     </ul>

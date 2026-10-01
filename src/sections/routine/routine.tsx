@@ -47,7 +47,7 @@ export default function Routine() {
                 </div>
                 <div className="footer--container--routine">
                     <div className="footer--text--routine">
-                        <p>5G OF CREATINE IN EVERY BAR. PURE. EFFECTIVE. EVERYDAY</p>
+                        <p>5G OF CREATINE. PURE. EFFECTIVE. ESSENTIAL.</p>
                     </div>
                 </div>
             </div>
