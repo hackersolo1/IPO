@@ -9,7 +9,7 @@ export default function Product() {
     const [quantity, setQuantity] = useState(1);
     const [selectedPack, setSelectedPack] = useState<'1' | '6' | '12'>('1');
     const [selectedFlavor, setSelectedFlavor] = useState<string>('chocolate');
-    const [selectedVideo, setSelectedVideo] = useState(brancoVideo);
+    const [selectedVideo, setSelectedVideo] = useState(pretoVideo);
 
     const packPrices = {
         '1': 4.00,
